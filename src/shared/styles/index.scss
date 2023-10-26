@@ -1,0 +1,36 @@
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  transition: all 0.15s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 0;
+}
+
+.promo {
+  background: no-repeat center / cover url("@/shared/assets/img/placeholder-promo.png");
+  height: 100%;
+  width: 100%;
+}
+

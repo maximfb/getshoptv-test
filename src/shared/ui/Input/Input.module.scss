@@ -1,0 +1,22 @@
+.input {
+    outline: none;
+    border: none;
+
+    &::placeholder {
+        color: inherit;
+        font-size: inherit;
+    }
+}
+
+.inputError:not(:focus) {
+    color: var(--error-color);
+    &::placeholder {
+        color: var(--error-color);
+    }
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 16px;
+    text-transform: uppercase;
+}

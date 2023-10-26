@@ -1,0 +1,75 @@
+.numpad {
+    max-width: 284px;
+    width: 100%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, clamp(33.33%, 88px, 1fr));
+    grid-template-areas:
+                "n1 n2 n3"
+                "n4 n5 n6"
+                "n7 n8 n9"
+                "-n1 -n1 n0";
+
+    &__key {
+        height: 52px;
+        background: transparent;
+        border: 2px solid var(--text-color);
+        text-align: center;
+
+        &:hover, &:focus {
+            background: var(--text-color);
+            color: #fff;
+        }
+    }
+
+    button[data-value='1'] {
+        grid-area: n1;
+    }
+
+    button[data-value='2'] {
+        grid-area: n2;
+    }
+
+    button[data-value='3'] {
+        grid-area: n3;
+    }
+
+    button[data-value='4'] {
+        grid-area: n4;
+    }
+
+    button[data-value='5'] {
+        grid-area: n5;
+    }
+
+    button[data-value='6'] {
+        grid-area: n6;
+    }
+
+    button[data-value='7'] {
+        grid-area: n7;
+    }
+
+    button[data-value='8'] {
+        grid-area: n8;
+    }
+
+    button[data-value='9'] {
+        grid-area: n9;
+    }
+
+    button[data-value='-1'] {
+        grid-area: -n1;
+    }
+
+    button[data-value='0'] {
+        grid-area: n0;
+    }
+
+}
+
+.active {
+    background: var(--text-color);
+    color: #fff;
+}

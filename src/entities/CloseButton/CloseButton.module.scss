@@ -1,0 +1,19 @@
+.close {
+    width: 88px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+
+    &__active {
+        background-color: var(--text-color);
+        svg path, line {
+            stroke: #fff;
+            fill: #fff;
+        }
+    }
+}
